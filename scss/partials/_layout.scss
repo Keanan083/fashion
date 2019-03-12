@@ -1,0 +1,46 @@
+grid1{
+    display: grid;
+    width: 100%;
+    // margin: 0 auto;
+
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "header"
+    "featured"
+    "collection"
+    "caps"
+    "blog"
+    "contact"
+    "footer"
+}
+
+.featured {
+    grid-area: featured;
+    // margin: 0 auto;
+
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+
+    grid-template-areas:
+    "featured-h featured-h featured-h"
+    "holder1 holder2 holder3";
+
+    .featured-h{
+        grid-area: featured-h
+    }
+
+    .holder1{
+        grid-area: holder1
+    }
+
+    .holder2{
+        grid-area:holder2
+    }
+
+    .holder3{
+        grid-area: holder3
+    }
+}
