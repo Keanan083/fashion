@@ -1,52 +1,104 @@
+.topnav {
+  text-align: center;
+  color: black;
+  display: inline; }
+  .topnav-text {
+    height: 9px;
+    font-family: SourceSansPro;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.83;
+    letter-spacing: 2.4px;
+    color: #8e000a; }
+
 .hero-banner {
-  background: url(../images/bg1.jpg);
-  background-position: center;
+  background-image: linear-gradient(to right top, #ff0000, #f40000, #e80000, #dd0000, #d20000, #c30003, #b40005, #a50007, #8e000a, #76000a, #600107, #4a0202);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
-  text-align: center; }
+  text-align: center;
+  padding-top: 58px; }
   .hero-banner nav {
+    display: inline;
     padding-top: 2rem;
     word-spacing: 3rem;
     font-family: 'Dosis', sans-serif; }
   .hero-banner a {
-    text-decoration: none;
-    color: #fff; }
-  .hero-banner .nate-b {
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-    font-family: 'Dosis', sans-serif;
-    text-align: center; }
-  .hero-banner .index-heading {
-    padding-top: 5rem;
-    font-size: 3rem;
-    font-family: 'Dosis', sans-serif;
+    width: 34px;
+    height: 11px;
+    font-size: 15px;
     font-weight: normal;
-    width: 37.313rem;
-    height: 2.375rem;
-    margin: 0 auto;
-    padding-bottom: 2rem; }
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none; }
+  .hero-banner .nate-b {
+    height: 21px;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    text-align: left;
+    color: #fffefe; }
+  .hero-banner .banner-heading {
+    height: 38px;
+    font-family: Dosis;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.96;
+    letter-spacing: normal;
+    color: #ffffff;
+    padding: 258px 0 40px 0; }
   .hero-banner .index-p {
-    padding: 0 7rem 0 7rem;
-    font-family: 'Source Sans Pro', sans-serif; }
+    height: 39px;
+    font-family: SourceSansPro;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    color: #e6e6e6;
+    padding: 0 489px 97px 489px; }
   .hero-banner .lookbook-btn {
-    width: 6rem;
-    height: 2.5rem;
-    border-radius: 40%;
-    margin: 4rem 0 7rem 0; }
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #a88d7b;
+    color: white; }
   .hero-banner .fa-angle-down {
-    font-size: 3.5rem;
-    padding-bottom: 2rem; }
+    width: 29px;
+    height: 16px;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 292px 0 50px 0; }
 
-.featured {
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #a88d7b; }
+
+.head {
   text-align: center; }
-  .featured .line {
-    width: 50px;
-    height: 2px;
-    background-color: #a88d7b; }
-  .featured .lfc-kit {
-    width: 370px;
-    height: 360px;
-    background: url(../images/home-kit.jpg);
-    background-size: contain; }
+
+.retro-collection {
+  background: url(../images/retro.jpg); }
 
 body {
   margin: 0;
@@ -62,26 +114,39 @@ h6 {
   font-weight: normal;
   text-transform: uppercase; }
 
-grid1 {
+.grid {
   display: grid;
   width: 100%;
-  grid-template-columns: 1;
-  grid-template-rows: auto;
-  grid-template-areas: "header" "featured" "collection" "caps" "blog" "contact" "footer"; }
+  text-align: center; }
 
-.featured {
-  grid-area: featured;
+.topnav {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 2rem;
-  grid-template-areas: "featured-h featured-h featured-h" "holder1 holder2 holder3"; }
-  .featured .featured-h {
-    grid-area: featured-h; }
-  .featured .holder1 {
-    grid-area: holder1; }
-  .featured .holder2 {
-    grid-area: holder2; }
-  .featured .holder3 {
-    grid-area: holder3; }
+  grid-template-areas: "dropdowns free-shipping social-icons"; }
+  .topnav .dropdowns {
+    grid-area: dropdowns; }
+  .topnav .free-shipping {
+    grid-area: free-shipping; }
+  .topnav .social-icons {
+    grid-area: social-icons; }
+
+.grid1 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "home-kit hoody crew-neck"; }
+
+.home-kit {
+  grid-area: home-kit; }
+
+.hoody {
+  grid-area: hoody; }
+
+.crew-neck {
+  grid-area: crew-neck; }
+
+.grid2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "men women"; }
 
 /*# sourceMappingURL=main.css.map */
