@@ -82,3 +82,40 @@
     }
 }
 
+.grid4 {
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    text-align: center;
+
+    grid-template-areas:
+    "contact links_shop instagram";
+
+    .contact {
+        grid-area: contact;
+    }
+
+    .links_shop {
+        grid-area: links_shop;
+    }
+
+    .instagram {
+        grid-area: instagram;
+    }
+}
+
+.links_shop {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "links shop";
+
+    .links {
+        grid-area: links;
+    }
+
+    .shop {
+        grid-area: shop;
+    }
+}

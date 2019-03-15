@@ -27,7 +27,7 @@
   color: #fff;
   text-align: center;
   padding-top: 58px; }
-  .hero-banner nav {
+  .hero-banner .hero-nav {
     display: inline;
     padding-top: 2rem;
     word-spacing: 3rem;
@@ -44,15 +44,8 @@
     color: #ffffff;
     text-decoration: none; }
   .hero-banner .nate-b {
-    height: 21px;
-    font-size: 30px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 1.5px;
-    text-align: left;
-    color: #fffefe; }
+    width: 117px;
+    height: 21px; }
   .hero-banner .banner-heading {
     height: 38px;
     font-family: Dosis;
@@ -275,5 +268,26 @@ footer {
     grid-template-areas-grid-area: blog-img; }
   .grid3 blog-container {
     grid-area: blog-container; }
+
+.grid4 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+  grid-template-areas: "contact links_shop instagram"; }
+  .grid4 .contact {
+    grid-area: contact; }
+  .grid4 .links_shop {
+    grid-area: links_shop; }
+  .grid4 .instagram {
+    grid-area: instagram; }
+
+.links_shop {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "links shop"; }
+  .links_shop .links {
+    grid-area: links; }
+  .links_shop .shop {
+    grid-area: shop; }
 
 /*# sourceMappingURL=main.css.map */

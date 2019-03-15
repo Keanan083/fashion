@@ -36,7 +36,7 @@
     text-align: center;
     padding-top: 58px;
 
-    nav {
+    .hero-nav {
         display: inline;
         padding-top: 2rem;
         word-spacing: 3rem;
@@ -60,15 +60,8 @@
 
     .nate-b {
 
+        width: 117px;
         height: 21px;
-        font-size: 30px;
-        font-weight: 600;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: 1.5px;
-        text-align: left;
-        color: #fffefe;
     }
 
     .banner-heading {
