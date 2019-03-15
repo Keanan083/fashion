@@ -69,7 +69,9 @@
     line-height: 1.67;
     letter-spacing: normal;
     color: #e6e6e6;
-    padding: 0 489px 97px 489px; }
+    padding-left: 489px;
+    padding-right: 489px;
+    padding-bottom: 97px; }
   .hero-banner .lookbook-btn {
     width: 150px;
     height: 40px;
@@ -92,10 +94,13 @@
 .line {
   width: 50px;
   height: 2px;
-  background-color: #a88d7b; }
+  background-color: #a88d7b;
+  margin-bottom: 70px; }
 
 .head {
-  text-align: center; }
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px; }
 
 .retro-collection {
   background: url(../images/retro.jpg); }
@@ -147,6 +152,10 @@ h6 {
 .grid2 {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "men women"; }
+  place-content: center;
+  grid-template-areas: "men women" men;
+    grid-template-areas-grid-area: men; }
+  .grid2 women {
+    grid-area: women; }
 
 /*# sourceMappingURL=main.css.map */

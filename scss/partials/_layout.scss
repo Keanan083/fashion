@@ -46,9 +46,20 @@
 }
 
 .grid2 {
+
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    // grid-gap: 30px;
+    place-content: center;
 
     grid-template-areas:
     "men women"
+
+    men{
+        grid-area: men;
+    }
+
+    women{
+        grid-area: women;
+    }
 }
