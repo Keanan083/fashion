@@ -1,6 +1,7 @@
 body{
-    margin: 0;
+    margin: auto;
     font-family: 'Source Sans Pro', sans-serif;
+    contain: content;
 }
 
 h1,
@@ -12,4 +13,9 @@ h6 {
     font-family: 'Dosis', sans-serif;
     font-weight: normal;
     text-transform: uppercase;
+}
+
+footer {
+    height: 425px;
+    background-color: grey;
 }

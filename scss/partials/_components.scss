@@ -15,9 +15,19 @@
         color: #8e000a;
     }
 
+    .dropdowns {
+        padding: 23px 0 21px 0;
+    }
+
+    .social-icons{
+        padding: 20px 0 18px 0;
+    }
+
 }
 
 .hero-banner{
+    width: 100%;
+    height: 945px;
     background-image: linear-gradient(to right top, #ff0000, #f40000, #e80000, #dd0000, #d20000, #c30003, #b40005, #a50007, #8e000a, #76000a, #600107, #4a0202);
     background-position: bottom;
     background-size: cover;
@@ -36,7 +46,6 @@
 
     a {
 
-        width: 34px;
         height: 11px;
         font-size: 15px;
         font-weight: normal;
@@ -88,8 +97,8 @@
         line-height: 1.67;
         letter-spacing: normal;
         color: #e6e6e6;
-        padding-left: 489px;
-        padding-right: 489px;
+        margin-left: 300px;
+        margin-right: 300px;
         padding-bottom: 97px;
     }
     
@@ -98,7 +107,9 @@
         width: 150px;
         height: 40px;
         border-radius: 20px;
-        background-color: #a88d7b;
+        background-color: rgba(0,0,0,0);
+        border-style: solid;
+        border-color: white;
         color: white;
     }
 
@@ -114,7 +125,7 @@
         letter-spacing: normal;
         text-align: center;
         color: #ffffff;
-        padding: 292px 0 50px 0;
+        padding: 200px 0 50px 0;
     }
 }
 
@@ -133,7 +144,135 @@
     padding-bottom: 20px;
 }
 
-.retro-collection {
+.grid2 {
+    padding-bottom: 100px;
 
-    background: url(../images/retro.jpg);
+    .gender-text{
+        padding-top: 42px;
+    }
 }
+
+.retro-collection {
+    height: 552px;
+    width: 100%;
+    background-image: url(../images/retro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+
+    &-h {
+
+        height: 37px;
+        font-family: Dosis;
+        font-size: 48px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.5;
+        letter-spacing: normal;
+        text-align: center;
+        padding: 199px 0 39px 0;
+    }
+
+    &-p {
+
+        height: 38px;
+        font-family: SourceSansPro;
+        // font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        // line-height: 1.6;
+        letter-spacing: normal;
+        text-align: center;
+        // padding: 0 80px 0 80px;
+    }
+
+    &-btn {
+
+        width: 150px;
+        height: 40px;
+        background-color: rgba(0,0,0,0);
+        border-style: solid;
+        border-color: black;
+        color: black;
+        margin: 0 599px 0 599px;
+    }
+}
+
+.blog {
+    width: 100%;
+    height: 675px;
+    padding-bottom: 100px;
+    
+    &-img {
+        padding-left: 50px;
+    }
+
+    &-h {
+        
+        font-family: SourceSansPro;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.92;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333333;
+    }
+
+    &-date {
+        font-family: SourceSansPro;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 3.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--warm-grey);
+    }
+
+    &-text {
+        font-family: SourceSansPro;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: #666666;
+    }
+
+    &-readmore {
+        font-family: SourceSansPro;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 3.2;
+        letter-spacing: 1.5px;
+        text-align: left;
+        color: #a88d7b;
+    }
+
+    .fa-arrow-right {
+        height: 11px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        // line-height: 3.2;
+        letter-spacing: normal;
+        text-align: left;
+        color: #a88d7b;
+    }
+    
+}
+
+.lnr-map-marker{
+    font-family: Linearicons-Free;
+}
+
