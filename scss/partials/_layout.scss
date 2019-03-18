@@ -67,55 +67,118 @@
 
 .grid3 {
     
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 49% 49%;
     grid-template-rows: auto;
+    grid-gap: 2rem;
 
     grid-template-areas:
-    "blog-img blog-container"
+    "blog-img blog-container";
 
-    blog-img{
+    .blog-img{
         grid-area: blog-img;
     }
 
-    blog-container{
+    .blog-container{
         grid-area: blog-container;
     }
 }
 
 .grid4 {
-
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    text-align: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
 
     grid-template-areas:
-    "contact links_shop instagram";
 
-    .contact {
-        grid-area: contact;
+    "contact-links shop-insta"
+    "copyright copyright";
+
+    .contact-links {
+        grid-area: contact-links;
+
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+        "contact links";
+
+        .contact {
+            grid-area: contact;
+        }
+
+        .links {
+            grid-area: links;
+        }
     }
 
-    .links_shop {
-        grid-area: links_shop;
-    }
+    .shop-insta {
+        grid-area: shop-insta;
 
-    .instagram {
-        grid-area: instagram;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+
+        grid-template-areas:
+        "shop insta";
+
+        .shop {
+            grid-area: shop;
+        }
+
+        .insta {
+            grid-area: insta;
+
+            grid-template-columns: 1;
+            grid-template-rows: auto;
+
+            grid-template-areas:
+            "insta-h"
+            "holder";
+
+            .holder {
+                grid-area: holder;
+        
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: auto auto;
+        
+                grid-template-areas:
+                "insta1 insta2 insta3 insta4"
+                "insta5 insta6 insta7 insta8";
+        
+                .insta1{
+                    grid-area: insta1;
+                }
+        
+                .insta2{
+                    grid-area: insta2;
+                }
+        
+                .insta3{
+                    grid-area: insta3;
+                }
+        
+                .insta4{
+                    grid-area: insta4;
+                }
+        
+                .insta5{
+                    grid-area: insta5;
+                }
+        
+                .insta6{
+                    grid-area: insta6;
+                }
+        
+                .insta7{
+                    grid-area: insta7;
+                }
+        
+                .insta8{
+                    grid-area: insta8;
+                }
+            }
+        }
     }
 }
 
-.links_shop {
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-
-    grid-template-areas:
-    "links shop";
-
-    .links {
-        grid-area: links;
-    }
-
-    .shop {
-        grid-area: shop;
-    }
+.copyright {
+    grid-area: copyright;
 }
