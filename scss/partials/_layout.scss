@@ -54,13 +54,13 @@
     text-align: center;
 
     grid-template-areas:
-    "men women"
+    "men women";
 
-    men{
+    .men{
         grid-area: men;
     }
 
-    women{
+    .women{
         grid-area: women;
     }
 }
@@ -182,3 +182,21 @@
 .copyright {
     grid-area: copyright;
 }
+
+.about-who-we-are {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    text-align: center;
+
+    grid-template-areas: 
+    "who-we-are-text who-we-are-image";
+
+    .who-we-are-text{
+       grid-area: who-we-are-text; 
+    }
+
+    .who-we-are-image{
+        grid-area: who-we-are-image;
+    }
+}
+
