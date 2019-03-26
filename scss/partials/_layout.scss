@@ -187,6 +187,7 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
     text-align: center;
+    grid-gap: 54px;
 
     grid-template-areas: 
     "who-we-are-text who-we-are-image";
@@ -197,6 +198,28 @@
 
     .who-we-are-image{
         grid-area: who-we-are-image;
+    }
+}
+
+.meet-our-team {
+    grid-template-areas:
+    "h1"
+    "nate keith tendekai henry";
+
+    .nate {
+        grid-area: nate;
+    }
+
+    .keith {
+        grid-area: keith;
+    }
+
+    .tendekai {
+        grid-area: tendekai;
+    }
+
+    .henry {
+        grid-area: henry;
     }
 }
 

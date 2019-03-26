@@ -266,10 +266,20 @@ button {
 .about-who-we-are {
   text-align: center;
   margin-top: 60px; }
+  .about-who-we-are p {
+    margin-left: 54px; }
   .about-who-we-are .who-we-are-image {
-    width: 600px;
+    width: 500px;
     height: 490px;
     background: #666666; }
+
+.meet-our-team h1 {
+  margin-top: 100px;
+  text-align: center; }
+.meet-our-team .mot-img {
+  height: 305px;
+  width: 270px;
+  background-color: #666666; }
 
 body {
   margin: auto;
@@ -399,10 +409,22 @@ i {
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   text-align: center;
+  grid-gap: 54px;
   grid-template-areas: "who-we-are-text who-we-are-image"; }
   .about-who-we-are .who-we-are-text {
     grid-area: who-we-are-text; }
   .about-who-we-are .who-we-are-image {
     grid-area: who-we-are-image; }
+
+.meet-our-team {
+  grid-template-areas: "h1" "nate keith tendekai henry"; }
+  .meet-our-team .nate {
+    grid-area: nate; }
+  .meet-our-team .keith {
+    grid-area: keith; }
+  .meet-our-team .tendekai {
+    grid-area: tendekai; }
+  .meet-our-team .henry {
+    grid-area: henry; }
 
 /*# sourceMappingURL=main.css.map */
