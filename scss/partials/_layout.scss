@@ -25,7 +25,7 @@
 }
 
 
-.grid1 {
+.featured-sec {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     text-align: center;
@@ -46,7 +46,7 @@
     grid-area: crew-neck;
 }
 
-.grid2 {
+.men-women {
 
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -65,7 +65,7 @@
     }
 }
 
-.grid3 {
+.blog-grid {
     
     grid-template-columns: 49% 49%;
     grid-template-rows: auto;
@@ -83,7 +83,7 @@
     }
 }
 
-.grid4 {
+.footer-grid {
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
 
@@ -233,5 +233,43 @@
 
     &-text {
         grid-area: what-we-do-text;
+    }
+}
+
+.blog-section1 {
+    margin: 0 3rem 0 3rem;
+    grid-gap: 5px;
+    grid-template-areas:
+    "navy-hoodie baby women-ynwa";
+    
+    .navy-hoodie {
+        grid-area: navy-hoodie;
+    }
+
+    .baby {
+        grid-area: baby;
+    }
+
+    .women-ynwa {
+        grid-area: women-ynwa;
+    }
+}
+
+.blog-section2 {
+    margin: 0 3rem 0 3rem;
+    grid-gap: 5px;
+    grid-template-areas:
+    "new-balance womens-briefs hoodie";
+    
+    .new-balance {
+        grid-area: new-balance;
+    }
+
+    .womens-briefs {
+        grid-area: womens-briefs;
+    }
+
+    .hoodie {
+        grid-area: hoodie;
     }
 }
