@@ -136,8 +136,7 @@
             .holder {
                 grid-area: holder;
         
-                grid-template-columns: 25% 25% 25% 25%;
-                grid-template-rows: auto auto;
+                grid-gap: 2px;
         
                 grid-template-areas:
                 "insta1 insta2 insta3 insta4"
@@ -201,9 +200,9 @@
     }
 }
 
-.meet-our-team {
+.team {
+    margin: 0 2rem 0 2rem;
     grid-template-areas:
-    "h1"
     "nate keith tendekai henry";
 
     .nate {
@@ -223,3 +222,16 @@
     }
 }
 
+.what-we-do {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "what-we-do-img what-we-do-text";
+
+    &-img {
+        grid-area: what-we-do-img;
+    }
+
+    &-text {
+        grid-area: what-we-do-text;
+    }
+}
