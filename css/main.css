@@ -344,18 +344,21 @@ button {
   margin-top: 8px;
   vertical-align: middle; }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%; } }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%; } }
+.contact-container {
+  text-align: center;
+  width: 1170px;
+  height: 200px;
+  margin-top: 60px; }
+  .contact-container .cellno {
+    display: grid;
+    place-content: center; }
+  .contact-container .nate-email {
+    display: grid;
+    place-content: center; }
+  .contact-container .opening-hours {
+    display: grid;
+    place-content: center; }
+
 body {
   margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
@@ -379,8 +382,7 @@ i {
   padding: 0.5rem; }
 
 .grid {
-  display: grid;
-  width: 100%; }
+  display: grid; }
 
 .topnav {
   grid-template-columns: repeat(3, 1fr);
@@ -532,6 +534,17 @@ i {
   .blog-section2 .hoodie {
     grid-area: hoodie; }
 
+.contact-container {
+  grid-template-areas: "map cell opening-hours" "map nate-email opening-hours"; }
+  .contact-container .map {
+    grid-area: map; }
+  .contact-container .cell {
+    grid-area: cellno; }
+  .contact-container .nate-email {
+    grid-area: nate-email; }
+  .contact-container .opening-hours {
+    grid-area: opening-hours; }
+
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%;
@@ -543,5 +556,16 @@ i {
 .column img {
   margin-top: 8px;
   vertical-align: middle; }
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%; } }
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

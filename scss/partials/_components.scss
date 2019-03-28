@@ -469,6 +469,35 @@
     margin-top: 8px;
     vertical-align: middle;
   }
-  
+
+
+//*********************************************************************************************************************
+
+//                                      CONTACT PAGE STYLING
+//*********************************************************************************************************************
+
+.contact-container {
+    // background-color: #999999;
+    text-align: center;
+    width: 1170px;
+    height: 200px;
+    margin-top: 60px;
+
+    .cellno {
+        display: grid;
+        place-content: center;
+    }
+
+    .nate-email {
+        display: grid;
+        place-content: center;
+    }
+
+    .opening-hours {
+        display: grid;
+        place-content: center;
+    }
+
+}
 
 

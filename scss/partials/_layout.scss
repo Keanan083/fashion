@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    width: 100%;
+    // width: 100%;
 }
 
 .topnav{
@@ -271,6 +271,28 @@
 
     .hoodie {
         grid-area: hoodie;
+    }
+}
+
+.contact-container {
+    grid-template-areas:
+    "map cell opening-hours"
+    "map nate-email opening-hours";
+    
+    .map {
+        grid-area: map;
+    }
+
+    .cell {
+        grid-area: cellno;
+    }
+
+    .nate-email {
+        grid-area: nate-email;
+    }
+
+    .opening-hours {
+        grid-area: opening-hours;
     }
 }
 
