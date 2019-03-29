@@ -482,6 +482,7 @@
     width: 1170px;
     height: 200px;
     margin-top: 60px;
+    margin-bottom: 74px;
 
     .cellno {
         display: grid;
@@ -500,4 +501,30 @@
 
 }
 
+form {
+    text-align: center;
+    margin-bottom: 100px;
+
+    .form-c {
+        width: 570px;
+        height: 50px;
+        border: solid 1px #e6e6e6;
+        margin: 30px;
+    }
+
+    .contact-textarea {
+        width: 1170px;
+        height: 150px;
+        border: solid 1px #e6e6e6;
+        background-color: var(--white-five);
+        margin-bottom: 39px;
+    }
+
+    .send-email-button {
+        width: 155px;
+        height: 40px;
+        background-color: var(--mushroom);
+    }
+
+}
 

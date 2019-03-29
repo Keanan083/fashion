@@ -348,7 +348,8 @@ button {
   text-align: center;
   width: 1170px;
   height: 200px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin-bottom: 74px; }
   .contact-container .cellno {
     display: grid;
     place-content: center; }
@@ -358,6 +359,25 @@ button {
   .contact-container .opening-hours {
     display: grid;
     place-content: center; }
+
+form {
+  text-align: center;
+  margin-bottom: 100px; }
+  form .form-c {
+    width: 570px;
+    height: 50px;
+    border: solid 1px #e6e6e6;
+    margin: 30px; }
+  form .contact-textarea {
+    width: 1170px;
+    height: 150px;
+    border: solid 1px #e6e6e6;
+    background-color: var(--white-five);
+    margin-bottom: 39px; }
+  form .send-email-button {
+    width: 155px;
+    height: 40px;
+    background-color: var(--mushroom); }
 
 body {
   margin: auto;
