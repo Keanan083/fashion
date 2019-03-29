@@ -265,7 +265,9 @@ button {
     color: #ffffff; }
   .about-hero p {
     padding-bottom: 181px;
-    color: #ffffff; }
+    color: #ffffff !important; }
+  .about-hero a {
+    color: white; }
 
 .about-who-we-are {
   text-align: center;
@@ -379,6 +381,33 @@ form {
     height: 40px;
     background-color: var(--mushroom); }
 
+.my-cart-btn {
+  width: 180px;
+  height: 44px;
+  background-color: var(--mushroom); }
+
+.shop-item {
+  margin-top: 50px; }
+  .shop-item .shop-info {
+    margin: 50px 100px 50px 50px; }
+  .shop-item .shop-img {
+    padding-left: 100px;
+    margin-top: 60px; }
+  .shop-item .price {
+    font-family: SourceSansPro;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #999999; }
+  .shop-item p {
+    padding: 40px 0 47px 0; }
+
+.last-item {
+  padding-bottom: 100px; }
+
 body {
   margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
@@ -401,8 +430,12 @@ footer {
 i {
   padding: 0.5rem; }
 
+a {
+  text-decoration: none; }
+
 .grid {
-  display: grid; }
+  display: grid;
+  width: 100%; }
 
 .topnav {
   grid-template-columns: repeat(3, 1fr);
@@ -576,6 +609,13 @@ i {
 .column img {
   margin-top: 8px;
   vertical-align: middle; }
+
+.shop-item {
+  grid-template-areas: "shop-img shop-info"; }
+  .shop-item .shop-img {
+    grid-area: shop-img; }
+  .shop-item .shop-info {
+    grid-area: shop-info; }
 
 @media screen and (max-width: 800px) {
   .column {

@@ -1,6 +1,6 @@
 .grid{
     display: grid;
-    // width: 100%;
+    width: 100%;
 }
 
 .topnav{
@@ -307,4 +307,17 @@
 .column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.shop-item {
+    grid-template-areas:
+    "shop-img shop-info";
+    
+    .shop-img {
+        grid-area: shop-img;
+    }
+
+    .shop-info {
+        grid-area: shop-info;
+    }
 }
