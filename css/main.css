@@ -207,17 +207,6 @@ button {
 .contact-h {
   margin-top: 20px; }
 
-.insta1,
-.insta2,
-.insta3,
-.insta4,
-.insta5,
-.insta6,
-.insta7,
-.insta8 {
-  height: 80px;
-  width: 80px;
-  background-color: #fff; }
 
 .copyright {
   background-image: linear-gradient(to right top, #b80000, #ad0001, #a20001, #980001, #8d0001, #860001, #7e0001, #770001, #710001, #6a0001, #640001, #5e0000);
@@ -277,7 +266,9 @@ button {
   .about-who-we-are .who-we-are-image {
     width: 500px;
     height: 490px;
-    background: #666666; }
+    background: url(../images/who-we-are.jpg);
+    background-position: top;
+    background-size: cover; }
 
 .meet-our-team {
   text-align: center; }
@@ -298,7 +289,10 @@ button {
   .what-we-do-img {
     width: 500px;
     height: 390px;
-    background-color: #666666;
+    background: url(../images/what-we-do-img.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin: 0 0 0 50px; }
 
 .blog-share .small-blog {
